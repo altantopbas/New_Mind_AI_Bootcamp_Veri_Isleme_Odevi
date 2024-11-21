@@ -503,7 +503,6 @@ def monthly_average_sales(data, date_column, category_column, sales_column):
     return monthly_sales
 
 monthly_average_sales(satis_veri_capped, 'tarih', 'kategori', 'adet')
-# Fonksiyon çağrılıp sonuclar incelendiğinde sales_change değişkeninde eksi (-) değerler oluştuğu gözlemlenmiştir.
 # Sonuçların incelenmesi rapor kısmında yapılmıştır.
 
 
@@ -543,5 +542,3 @@ X_test = sc.transform(X_test)
 model = LinearRegression() # LinearRegression ile model oluşturma işlemi yapılır.
 model.fit(X_train, y_train) # Oluşturulan modelin eğitimi için fit etme işlemi uygulanır.
 model.score(X_test, y_test) # Eğitilen model üzerinde skoru öğrenmek için test verileri test edilir.
-
-
